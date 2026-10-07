@@ -158,3 +158,13 @@ describe('formatTimestamp', () => {
     assert.strictEqual(formatTimestamp(new Date('2026-03-04T20:00:00Z')), 'Mar 4, 2026, 3:00 PM');
   });
 });
+
+describe('sample email (examples/)', () => {
+  it('matches what the renderer produces today', () => {
+    const fs = require('fs');
+    const path = require('path');
+    const { renderSampleEmail } = require('../examples/render-sample');
+    const committed = fs.readFileSync(path.join(__dirname, '..', 'examples', 'sample-email.txt'), 'utf8');
+    assert.equal(committed, renderSampleEmail(), 'regenerate: node examples/render-sample.js > examples/sample-email.txt');
+  });
+});

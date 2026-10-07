@@ -1,0 +1,88 @@
+{
+  "_synthetic": "Invented example for documentation. No real project, people, places, or recordings.",
+  "to": "you@example.com",
+  "subject": "Level 3 rough-in walk, Example Hall — Mar 12, 2026, 10:42 AM",
+  "attachments": [
+    "photo_1.jpg",
+    "photo_2.jpg"
+  ],
+  "mode": "field_notes",
+  "structured": {
+    "mode": "field_notes",
+    "metadata": {
+      "date": "2026-03-12",
+      "location": "Example Hall, Level 3",
+      "project_or_site": "Sample Office Project",
+      "observer": "Superintendent",
+      "purpose": "Pre-drywall rough-in check"
+    },
+    "tldr": "Level 3 is mostly ready for drywall. Two items hold the east wing: a missing fire-stop at the corridor penetrations and a sagging duct run over room 316.",
+    "summary": "Walked Level 3 east to west before drywall starts Monday. Framing, electrical, and plumbing rough-in are complete in the west wing. The east wing needs fire-stopping and one duct support fixed before it can be closed up. Handwritten notes covered rooms 301 to 318; the recording added detail on the corridor.",
+    "observations": [
+      {
+        "observation": "Electrical rough-in complete, boxes at consistent height",
+        "location_detail": "Rooms 302-308",
+        "photo_reference": "photo 1"
+      },
+      {
+        "observation": "Plumbing pressure test tag posted and signed",
+        "location_detail": "Restroom core"
+      },
+      {
+        "observation": "Penetrations through rated corridor wall not yet fire-stopped",
+        "location_detail": "East corridor",
+        "photo_reference": "photo 2"
+      }
+    ],
+    "measurements_and_data": [
+      {
+        "item": "Outlet box height (sampled)",
+        "value": "18",
+        "unit": "in AFF"
+      },
+      {
+        "item": "Stud spacing (sampled)",
+        "value": "16",
+        "unit": "in o.c."
+      },
+      {
+        "item": "Rooms walked",
+        "value": "15"
+      }
+    ],
+    "issues_identified": [
+      {
+        "issue": "Missing fire-stop at 6 corridor penetrations",
+        "severity": "high",
+        "location_detail": "East corridor",
+        "recommended_action": "Fire-stop before inspection; hold drywall in corridor"
+      },
+      {
+        "issue": "Duct run sagging, missing two hangers",
+        "severity": "medium",
+        "location_detail": "Above room 316",
+        "recommended_action": "Add hangers before ceiling grid"
+      }
+    ],
+    "punch_list": [
+      {
+        "item": "Fire-stop east corridor penetrations",
+        "responsible_party": "Fire-stopping sub",
+        "due_date": "Mar 14"
+      },
+      {
+        "item": "Add duct hangers above 316",
+        "responsible_party": "Mechanical sub",
+        "due_date": "Mar 13"
+      },
+      {
+        "item": "Replace cracked box cover in 311",
+        "responsible_party": "Electrical sub"
+      }
+    ],
+    "follow_ups_needed": [
+      "Book the above-ceiling inspection once the corridor is fire-stopped",
+      "Confirm drywall start date with the drywall sub after Friday's re-walk"
+    ]
+  }
+}

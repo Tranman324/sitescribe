@@ -14,6 +14,32 @@ I built it in April 2026 for a construction company's field and office staff, wh
 and do not want another app. It runs there as an internal service. This repo is a cleaned copy: company names,
 endpoints, and credentials are removed, and the history starts fresh.
 
+## Sample output
+
+A field walk, rendered by the real renderer from invented data (no real project, people, or
+recording). Excerpt below; the full email is in [`examples/sample-email.txt`](./examples/sample-email.txt).
+
+```text
+Subject: Level 3 rough-in walk, Example Hall — Mar 12, 2026, 10:42 AM
+Attachments: transcript (.txt), photo_1.jpg, photo_2.jpg
+
+⚡ TLDR
+Level 3 is mostly ready for drywall. Two items hold the east wing: a missing fire-stop at the
+corridor penetrations and a sagging duct run over room 316.
+
+⚠️ ISSUES
+- [high] Missing fire-stop at 6 corridor penetrations — East corridor → Fire-stop before inspection; hold drywall in corridor
+- [medium] Duct run sagging, missing two hangers — Above room 316 → Add hangers before ceiling grid
+
+📋 PUNCH LIST
+- Fire-stop east corridor penetrations — Fire-stopping sub | Mar 14
+- Add duct hangers above 316 — Mechanical sub | Mar 13
+- Replace cracked box cover in 311 — Electrical sub
+```
+
+A test checks that the sample still matches the renderer's output, so it can't drift.
+Regenerate it with `node examples/render-sample.js > examples/sample-email.txt`.
+
 ## What is interesting here
 
 - **Long recordings just work.** `ffprobe` checks size and duration, `ffmpeg` splits losslessly into
