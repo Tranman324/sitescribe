@@ -1,0 +1,18 @@
+{
+  "_instructions": "Single-speaker stream-of-consciousness note. Preserve the speaker's voice and vocabulary — do not sanitize to corporate-speak. If other people are mentioned in the context of tasks or actions, infer them as owners. Leave blank when not confident.",
+  "mode": "voice_note",
+  "metadata": {
+    "date": "",
+    "duration_min": 0,
+    "context": ""
+  },
+  "gist": "",
+  "threads": [
+    { "theme": "", "thoughts": [] }
+  ],
+  "ideas": [],
+  "todos": [
+    { "task": "", "context": "" }
+  ],
+  "questions_to_self": []
+}

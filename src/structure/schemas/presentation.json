@@ -1,0 +1,29 @@
+{
+  "_instructions": "Structured monologue with teaching intent. Infer presenter from self-introduction, 'I'll now cover...', 'Today I want to share...', etc. Infer audience from context clues. Leave blank when not confident. Track references and evidence separately — they are often the most actionable outputs.",
+  "mode": "presentation",
+  "metadata": {
+    "title": "",
+    "presenter": "",
+    "date": "",
+    "duration_min": 0,
+    "audience": ""
+  },
+  "executive_summary": "",
+  "thesis": "",
+  "outline": [
+    { "section": "", "key_points": [], "evidence": [], "timestamp": "" }
+  ],
+  "key_terms": [
+    { "term": "", "definition": "" }
+  ],
+  "quotes": [
+    { "quote": "", "timestamp": "" }
+  ],
+  "references": [
+    { "type": "book|paper|tool|person|url", "name": "", "context": "" }
+  ],
+  "qa_highlights": [
+    { "question": "", "answer": "" }
+  ],
+  "takeaways": []
+}

@@ -1,0 +1,20 @@
+{
+  "_instructions": "Personal solo reflection — daily journal, retrospective, end-of-day review. Single speaker, retrospective framing. No speaker inference needed. Preserve emotional nuance: be descriptive, not clinical or interpretive. patterns_noticed becomes powerful when aggregated across multiple entries over time.",
+  "mode": "journal",
+  "metadata": {
+    "date": "",
+    "duration_min": 0,
+    "time_of_day": ""
+  },
+  "summary": "",
+  "mood_or_state": "",
+  "events_of_the_day": [],
+  "wins": [],
+  "challenges": [],
+  "gratitudes": [],
+  "reflections": [
+    { "topic": "", "reflection": "" }
+  ],
+  "patterns_noticed": [],
+  "intentions_for_tomorrow": []
+}

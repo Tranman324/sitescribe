@@ -1,0 +1,22 @@
+{
+  "_instructions": "Generic fallback — audio didn't confidently match a specific mode. Extract whatever structure is present. Do not fabricate coherence that isn't there. If people are mentioned in action contexts, infer as owners — leave blank when not confident. This should feel useful, not like an error state.",
+  "mode": "unclassified",
+  "metadata": {
+    "date": "",
+    "duration_min": 0,
+    "speaker_count": 0,
+    "classification_confidence": 0.0,
+    "reason_unclassified": "low_confidence|too_short|mixed_content|unclear_structure|other"
+  },
+  "summary": "",
+  "key_points": [],
+  "topics_mentioned": [],
+  "people_mentioned": [],
+  "action_items_or_todos": [
+    { "task": "", "context": "" }
+  ],
+  "questions_raised": [],
+  "notable_moments": [
+    { "note": "", "timestamp": "" }
+  ]
+}

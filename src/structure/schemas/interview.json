@@ -1,0 +1,22 @@
+{
+  "_instructions": "Two-speaker Q&A format. Do NOT hardcode interviewer/interviewee assumptions. Instead, infer speaker roles from context: who asks questions vs. who answers, name mentions, self-introductions, 'Tell me about...', 'I worked at...'. Add inferred speaker labels to quotes when confident. Leave participant fields blank when not confident.",
+  "mode": "interview",
+  "metadata": {
+    "date": "",
+    "duration_min": 0,
+    "participants": [],
+    "purpose": ""
+  },
+  "summary": "",
+  "exchanges": [
+    { "question": "", "answer_summary": "", "notable_quote": "", "speaker": "", "timestamp": "" }
+  ],
+  "themes": [
+    { "theme": "", "supporting_quotes": [] }
+  ],
+  "notable_quotes": [
+    { "quote": "", "context": "", "speaker": "" }
+  ],
+  "follow_up_questions": [],
+  "red_flags_or_concerns": []
+}

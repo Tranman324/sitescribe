@@ -1,0 +1,24 @@
+{
+  "_instructions": "Ideation session — the output IS the ideas. Infer who proposed each idea from 'I think', name mentions, turn attribution. Best-effort only — leave proposed_by blank when not confident. Preserve dismissed and wild ideas separately — they often become gold later. Do not force decisions where none were made.",
+  "mode": "brainstorm",
+  "metadata": {
+    "date": "",
+    "duration_min": 0,
+    "participants": [],
+    "prompt_or_goal": ""
+  },
+  "summary": "",
+  "ideas_generated": [
+    {
+      "theme": "",
+      "ideas": [
+        { "idea": "", "proposed_by": "", "reception": "strong|mixed|dismissed" }
+      ]
+    }
+  ],
+  "wild_ideas_preserved": [],
+  "convergence_points": [],
+  "tensions_or_disagreements": [],
+  "what_to_explore_next": [],
+  "parking_lot": []
+}

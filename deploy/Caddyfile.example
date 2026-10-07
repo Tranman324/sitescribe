@@ -1,0 +1,7 @@
+# Expose only the two public routes; everything else stays on localhost.
+notes.example.com {
+    handle /api/meeting-notes { reverse_proxy 127.0.0.1:3479 }
+    handle /health            { reverse_proxy 127.0.0.1:3479 }
+    respond 404
+}
+# Caddy sets X-Forwarded-For, so run the service with TRUST_PROXY=true.

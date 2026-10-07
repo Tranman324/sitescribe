@@ -1,0 +1,32 @@
+{
+  "_instructions": "Construction punch list — defects, issues, and items requiring correction during a walkthrough. Infer observer from 'I'm noting', 'I saw', name mentions. Fill trade/responsible_party from context clues ('electrician', 'plumber', 'GC', person names). Assign sequential item_number to each issue. Populate by_trade and by_area groupings. Leave fields blank when not confident.",
+  "mode": "punch_list",
+  "metadata": {
+    "date": "",
+    "duration_min": 0,
+    "project_or_site": "",
+    "location": "",
+    "observer": "",
+    "phase": ""
+  },
+  "summary": "",
+  "total_items": 0,
+  "items": [
+    {
+      "item_number": 1,
+      "location_or_area": "",
+      "description": "",
+      "trade_or_responsible_party": "",
+      "severity": "cosmetic|minor|major|safety|code",
+      "due_date": "",
+      "photo_reference": "",
+      "notes": ""
+    }
+  ],
+  "by_trade": [{ "trade": "", "count": 0, "items": [] }],
+  "by_area": [{ "area": "", "count": 0, "items": [] }],
+  "critical_items": [],
+  "completion_estimate": "",
+  "next_walk_date": "",
+  "follow_ups": []
+}

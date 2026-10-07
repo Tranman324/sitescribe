@@ -1,0 +1,20 @@
+{
+  "name": "sitescribe",
+  "version": "1.0.0",
+  "description": "Voice memo + handwritten-note photos from an iPhone Shortcut in, structured meeting notes by email out. Transcription, vision OCR, and schema-driven LLM structuring.",
+  "main": "src/index.js",
+  "license": "MIT",
+  "private": true,
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "start": "node src/index.js",
+    "test": "node --test test/*.test.js",
+    "smoke": "node -e \"require('./src/config'); console.log('config loads')\""
+  },
+  "dependencies": {
+    "busboy": "^1.6.0",
+    "dotenv": "^16.4.5"
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "_instructions": "Two-person developmental conversation (manager 1-on-1, coaching, mentorship). Infer parties from name mentions and turn-taking context. Assign names to commitments when confident. Leave party fields blank when not confident. Handle sensitive content with care — be descriptive, not interpretive. Do not diagnose emotional states.",
+  "mode": "one_on_one",
+  "metadata": {
+    "date": "",
+    "duration_min": 0,
+    "participants": [],
+    "session_type": "manager_1on1|coaching|mentorship|therapy"
+  },
+  "summary": "",
+  "themes_discussed": [
+    { "theme": "", "context": "" }
+  ],
+  "emotional_notes": [
+    { "observation": "", "timestamp": "" }
+  ],
+  "wins_celebrated": [],
+  "challenges_raised": [],
+  "commitments": [
+    { "party": "", "commitment": "", "due_date": "" }
+  ],
+  "homework_or_between_session_tasks": [],
+  "follow_up_topics": [],
+  "open_threads": []
+}

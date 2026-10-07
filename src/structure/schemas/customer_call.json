@@ -1,0 +1,30 @@
+{
+  "_instructions": "Business call between two parties. Infer who's the customer vs. rep/vendor from context (who's seeking help, 'our product', 'your issue', company references). List both in participants[]. Assign party labels in commitments when confident. Leave blank when not confident. follow_up_email_draft is high-value — always attempt it.",
+  "mode": "customer_call",
+  "metadata": {
+    "date": "",
+    "duration_min": 0,
+    "participants": [],
+    "call_type": "sales|support|discovery|check_in|renewal"
+  },
+  "caller_intent": "",
+  "summary": "",
+  "issues_raised": [
+    { "issue": "", "severity": "low|medium|high", "resolution_status": "open|resolved|escalated" }
+  ],
+  "objections_or_concerns": [],
+  "commitments": [
+    { "party": "", "commitment": "", "due_date": "" }
+  ],
+  "crm_fields": {
+    "account": "",
+    "opportunity_stage": "",
+    "deal_value": "",
+    "next_touch_date": "",
+    "sentiment": "positive|neutral|negative"
+  },
+  "action_items": [
+    { "task": "", "owner": "", "due_date": "" }
+  ],
+  "follow_up_email_draft": ""
+}

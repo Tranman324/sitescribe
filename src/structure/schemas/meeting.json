@@ -1,0 +1,22 @@
+{
+  "_instructions": "Fill all fields from the transcript. Best-effort speaker inference: assign names from mentions, self-references ('I'll handle that'), introductions, and turn-taking context. Leave owner/participant fields blank when not confident. Do not fabricate names.",
+  "mode": "meeting",
+  "metadata": {
+    "title": "",
+    "date": "",
+    "duration_min": 0,
+    "participants": []
+  },
+  "summary": "",
+  "topics": [
+    { "name": "", "summary": "", "key_points": [] }
+  ],
+  "decisions": [
+    { "decision": "", "context": "" }
+  ],
+  "action_items": [
+    { "task": "", "owner": "", "due_date": "" }
+  ],
+  "open_questions": [],
+  "next_steps": []
+}

@@ -1,0 +1,27 @@
+{
+  "_instructions": "Field observation note — construction walkthrough, inspection, site visit. Infer observer from self-references ('I'm looking at', 'I measured', 'I'm standing in'). Other people mentioned should appear in people_mentioned. Leave observer blank if not confident. Every measurement, number, and location detail is important — capture precisely.",
+  "mode": "field_notes",
+  "metadata": {
+    "date": "",
+    "duration_min": 0,
+    "location": "",
+    "project_or_site": "",
+    "observer": "",
+    "purpose": ""
+  },
+  "summary": "",
+  "observations": [
+    { "observation": "", "location_detail": "", "timestamp": "", "photo_reference": "" }
+  ],
+  "measurements_and_data": [
+    { "item": "", "value": "", "unit": "" }
+  ],
+  "issues_identified": [
+    { "issue": "", "severity": "low|medium|high|critical", "location_detail": "", "recommended_action": "" }
+  ],
+  "punch_list": [
+    { "item": "", "responsible_party": "", "due_date": "" }
+  ],
+  "follow_ups_needed": [],
+  "people_mentioned": []
+}

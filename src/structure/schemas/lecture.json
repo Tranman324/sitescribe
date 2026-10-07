@@ -1,0 +1,27 @@
+{
+  "_instructions": "Academic or training lecture. Infer instructor from 'Today I'll cover', 'For next class...', 'Pay attention to this for the exam', etc. Leave instructor blank if not confident. Flashcard Q&A pairs are high-value — generate them for every major concept. Flag 'this will be on the exam' moments in exam_hints.",
+  "mode": "lecture",
+  "metadata": {
+    "course": "",
+    "topic": "",
+    "instructor": "",
+    "date": "",
+    "duration_min": 0
+  },
+  "summary": "",
+  "concepts": [
+    { "concept": "", "definition": "", "examples": [], "related_concepts": [], "timestamp": "" }
+  ],
+  "worked_examples": [
+    { "problem": "", "solution_steps": [], "timestamp": "" }
+  ],
+  "flashcards": [
+    { "question": "", "answer": "" }
+  ],
+  "assignments_mentioned": [
+    { "task": "", "due_date": "" }
+  ],
+  "exam_hints": [],
+  "readings_referenced": [],
+  "study_questions": []
+}

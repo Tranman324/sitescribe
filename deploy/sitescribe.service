@@ -1,0 +1,22 @@
+[Unit]
+Description=SiteScribe voice-note webhook
+After=network.target
+
+[Service]
+Type=simple
+User=sitescribe
+Group=sitescribe
+WorkingDirectory=/opt/sitescribe
+ExecStart=/usr/bin/node src/index.js
+EnvironmentFile=/etc/sitescribe/sitescribe.env
+Environment=NODE_ENV=production
+Restart=on-failure
+RestartSec=5
+NoNewPrivileges=true
+ProtectSystem=strict
+ProtectHome=true
+PrivateTmp=true
+ReadWritePaths=/var/lib/sitescribe
+
+[Install]
+WantedBy=multi-user.target
