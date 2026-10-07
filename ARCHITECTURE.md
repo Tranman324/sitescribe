@@ -8,7 +8,7 @@ full transcript attached.
 
 - **Handwritten notes are primary.** Photos of a notepad are transcribed in full; audio adds context.
 - **Feature folders.** Each module lives in its own folder with a public `index.js`.
-- **Small files.** No source file over 200 lines. Split before crossing it.
+- **Small files.** No file in `src/` over 200 lines. Split before crossing it.
 - **Direct vendor calls.** Anthropic, OpenAI, and Microsoft Graph are called over plain `fetch`.
   No SDKs, no agent gateway in the request path.
 - **Stateless.** Nothing is kept in memory between requests. Temp files are deleted per request.

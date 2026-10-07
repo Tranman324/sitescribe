@@ -1,5 +1,7 @@
 # SiteScribe
 
+[![ci](https://github.com/Tranman324/sitescribe/actions/workflows/ci.yml/badge.svg)](https://github.com/Tranman324/sitescribe/actions/workflows/ci.yml) [![license: MIT](https://img.shields.io/badge/license-MIT-blue.svg)](./LICENSE)
+
 Talk through a meeting or a site walk, snap photos of your handwritten notes, and get organized
 notes in your inbox shortly after.
 
@@ -28,7 +30,7 @@ endpoints, and credentials are removed, and the history starts fresh.
   (home-screen and share-sheet), including an offline queue that saves recordings to iCloud on cellular
   and uploads them later on Wi-Fi.
 - **Small and dependency-light.** Two runtime dependencies (`busboy`, `dotenv`). Vendor APIs are called
-  with plain `fetch`. No source file over 200 lines.
+  with plain `fetch`. No file in `src/` over 200 lines.
 
 ## Quick start
 
