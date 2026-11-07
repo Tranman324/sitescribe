@@ -1,0 +1,2 @@
+# Only the empty WEBHOOK_TOKEN= placeholder in the initial import; future commits still scan.
+84b5c9debe8bed4d7852164a191497b554c48047:.env.example:generic-api-key:5
