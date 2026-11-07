@@ -44,8 +44,9 @@ jobs:
           printf '[extend]\nuseDefault = true\n' > "$scan_dir/config.toml"
           # v8.30.1 also loads <target>/.gitleaksignore even with an explicit -i.
           # Target Git metadata, not '.', to avoid loading the working-tree policy.
+          # Include type changes: a symlink can become a secret-bearing regular file.
           "$scan_dir/gitleaks" git --redact --exit-code 1 \
             --config "$scan_dir/config.toml" \
             --gitleaks-ignore-path "$scan_dir/.gitleaksignore" \
             --ignore-gitleaks-allow \
-            --log-opts="--full-history --all -m --diff-filter=tuxdb" .git
+            --log-opts="--full-history --all -m --diff-filter=uxdb" .git
