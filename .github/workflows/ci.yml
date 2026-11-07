@@ -25,6 +25,28 @@ jobs:
         with:
           fetch-depth: 0
       - name: gitleaks
+        env:
+          # PRs use the reviewed base, never a contributor's proposed exemptions.
+          # Pushes use the fetched default branch (including reviewed main pushes).
+          POLICY_REF: ${{ github.event.pull_request.base.sha || format('refs/remotes/origin/{0}', github.event.repository.default_branch) }}
+        shell: bash
         run: |
-          curl -sSfL https://github.com/gitleaks/gitleaks/releases/download/v8.30.1/gitleaks_8.30.1_linux_x64.tar.gz | tar -xz gitleaks
-          ./gitleaks git --redact --exit-code 1 .
+          set -euo pipefail
+          scan_dir="$(mktemp -d)"
+          trap 'rm -rf "$scan_dir"' EXIT
+          archive="$scan_dir/gitleaks.tar.gz"
+          curl -sSfL https://github.com/gitleaks/gitleaks/releases/download/v8.30.1/gitleaks_8.30.1_linux_x64.tar.gz -o "$archive"
+          printf '%s  %s\n' '551f6fc83ea457d62a0d98237cbad105af8d557003051f41f3e7ca7b3f2470eb' "$archive" | sha256sum -c -
+          tar -xzf "$archive" -C "$scan_dir" gitleaks
+          # This is the sole exception policy; missing policy fails closed.
+          git show "${POLICY_REF}:.gitleaksignore" > "$scan_dir/.gitleaksignore"
+          # Do not discover contributor-controlled .gitleaks.toml configuration.
+          printf '[extend]\nuseDefault = true\n' > "$scan_dir/config.toml"
+          # v8.30.1 also loads <target>/.gitleaksignore even with an explicit -i.
+          # Target Git metadata, not '.', to avoid loading the working-tree policy.
+          # Include type changes: a symlink can become a secret-bearing regular file.
+          "$scan_dir/gitleaks" git --redact --exit-code 1 \
+            --config "$scan_dir/config.toml" \
+            --gitleaks-ignore-path "$scan_dir/.gitleaksignore" \
+            --ignore-gitleaks-allow \
+            --log-opts="--full-history --all -m --diff-filter=uxdb" .git
